@@ -88,3 +88,13 @@ function createDomElement(elem, text, styles) {
     domElem.classList.add(styles);
     return domElem;
 }
+
+
+const body = document.querySelector('body');
+const textarea = createDomElement('textarea', '', 'textfield');
+const keyboard = createDomElement('div', '', 'keyboard');
+const keyboardContainer = createDomElement('div', '', 'keyboard-container');
+
+
+body.append(textarea, keyboard);
+keyboard.append(keyboardContainer);
