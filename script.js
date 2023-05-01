@@ -143,3 +143,41 @@ function createKeyboard() {
         })
     }
 }
+
+
+document.addEventListener('keydown', function(event) {
+    textarea.focus();
+    const elem = document.querySelector(`div[data-code=${event.code}]`);
+
+    elem.classList.add('active');
+
+    if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
+        keyboardContainer.innerHTML = '';
+        shift = true;
+        createKeyboard()
+    }
+
+    
+
+})
+
+document.addEventListener('keyup', function(event) {
+    const elem = document.querySelector(`div[data-code=${event.code}]`);
+
+    elem.classList.remove('active');
+
+    if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
+        keyboardContainer.innerHTML = '';
+        shift = false;
+        createKeyboard()
+    }
+
+
+})
+
+
+keyboard.addEventListener('click', function(event) {
+    const elem = event.target.classList.contains('key');
+    
+    
+})
