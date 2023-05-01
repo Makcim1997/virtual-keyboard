@@ -94,7 +94,23 @@ const body = document.querySelector('body');
 const textarea = createDomElement('textarea', '', 'textfield');
 const keyboard = createDomElement('div', '', 'keyboard');
 const keyboardContainer = createDomElement('div', '', 'keyboard-container');
+let cursor = textarea.selectionStart;
+let shift = false;
+let lang = 'en';
 
 
 body.append(textarea, keyboard);
 keyboard.append(keyboardContainer);
+
+
+createKeyboard()
+
+function createKeyboard() {
+
+    for (let i = 0; i < keyData.length; i++) {
+        const row = createDomElement('div', '', 'keyboard-row');
+
+        keyboardContainer.append(row);
+
+    }
+}
