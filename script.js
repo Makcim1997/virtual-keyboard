@@ -36,7 +36,7 @@ const keyData = [
     ],
 
     [
-        {key: '<span class="caps_icon">•</span><div>Caps<br>lock</div>', code: 'CapsLock', class: 'key-capslock', noType: true},
+        { key: '<span class="caps_icon">•</span><div>Caps<br>lock</div>', code: 'CapsLock', class: 'key-capslock', noType: true },
         { key: { ru: 'ф', en: 'a' }, shift: { ru: 'Ф', en: 'A' }, code: 'KeyA' },
         { key: { ru: 'ы', en: 's' }, shift: { ru: 'Ы', en: 'S' }, code: 'KeyS' },
         { key: { ru: 'в', en: 'd' }, shift: { ru: 'В', en: 'D' }, code: 'KeyD' },
@@ -52,7 +52,7 @@ const keyData = [
     ],
 
     [
-        {key: 'Shift', code: 'ShiftLeft', class: 'key-leftshift', noType: true },
+        { key: 'Shift', code: 'ShiftLeft', class: 'key-leftshift', noType: true },
         { key: { ru: 'я', en: 'z' }, shift: { ru: 'Я', en: 'Z' }, code: 'KeyZ' },
         { key: { ru: 'ч', en: 'x' }, shift: { ru: 'Ч', en: 'X' }, code: 'KeyX' },
         { key: { ru: 'с', en: 'c' }, shift: { ru: 'С', en: 'C' }, code: 'KeyC' },
@@ -69,7 +69,7 @@ const keyData = [
 
 
     [
-        {key: 'Ctrl', code: 'ControlLeft', class: 'key-leftctrl', noType: true },
+        { key: 'Ctrl', code: 'ControlLeft', class: 'key-leftctrl', noType: true },
         { key: { ru: 'RU', en: 'EN' }, code: 'Lang', class: 'key-lang', noType: true },
         { key: 'Alt', code: 'AltLeft', class: 'key-leftalt', noType: true },
         { key: ' ', code: 'Space', class: 'key-space' },
@@ -80,3 +80,11 @@ const keyData = [
         { key: '→', code: 'ArrowRight', noType: true }
     ],
 ];
+
+
+function createDomElement(elem, text, styles) {
+    const domElem = document.createElement(elem);
+    domElem.innerHTML = text;
+    domElem.classList.add(styles);
+    return domElem;
+}
