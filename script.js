@@ -20,48 +20,48 @@ const keyData = [
 
     [
         { key: 'Tab', code: 'Tab', class: 'key-tab', noType: true},
-        { key: { ru: 'й', en: 'q' }, shift: { ru: 'Й', en: 'Q' }, code: 'KeyQ' },
-        { key: { ru: 'ц', en: 'w' }, shift: { ru: 'Ц', en: 'W' }, code: 'KeyW' },
-        { key: { ru: 'у', en: 'e' }, shift: { ru: 'У', en: 'E' }, code: 'KeyE' },
-        { key: { ru: 'к', en: 'r' }, shift: { ru: 'К', en: 'R' }, code: 'KeyR' },
-        { key: { ru: 'е', en: 't' }, shift: { ru: 'Е', en: 'T' }, code: 'KeyT' },
-        { key: { ru: 'н', en: 'y' }, shift: { ru: 'Н', en: 'Y' }, code: 'KeyY' },
-        { key: { ru: 'г', en: 'u' }, shift: { ru: 'Г', en: 'U' }, code: 'KeyU' },
-        { key: { ru: 'ш', en: 'i' }, shift: { ru: 'Ш', en: 'I' }, code: 'KeyI' },
-        { key: { ru: 'щ', en: 'o' }, shift: { ru: 'Щ', en: 'O' }, code: 'KeyO' },
-        { key: { ru: 'з', en: 'p' }, shift: { ru: 'З', en: 'P' }, code: 'KeyP' },
-        { key: { ru: 'х', en: '[' }, shift: { ru: 'Х', en: '{' }, code: 'BracketLeft' },
-        { key: { ru: 'ъ', en: ']' }, shift: { ru: 'Ъ', en: '}' }, code: 'BracketRight' },
+        { key: { ru: 'й', en: 'q' }, shift: { ru: 'Й', en: 'Q' }, class: 'letter', code: 'KeyQ' },
+        { key: { ru: 'ц', en: 'w' }, shift: { ru: 'Ц', en: 'W' }, class: 'letter', code: 'KeyW' },
+        { key: { ru: 'у', en: 'e' }, shift: { ru: 'У', en: 'E' }, class: 'letter', code: 'KeyE' },
+        { key: { ru: 'к', en: 'r' }, shift: { ru: 'К', en: 'R' }, class: 'letter', code: 'KeyR' },
+        { key: { ru: 'е', en: 't' }, shift: { ru: 'Е', en: 'T' }, class: 'letter', code: 'KeyT' },
+        { key: { ru: 'н', en: 'y' }, shift: { ru: 'Н', en: 'Y' }, class: 'letter', code: 'KeyY' },
+        { key: { ru: 'г', en: 'u' }, shift: { ru: 'Г', en: 'U' }, class: 'letter', code: 'KeyU' },
+        { key: { ru: 'ш', en: 'i' }, shift: { ru: 'Ш', en: 'I' }, class: 'letter', code: 'KeyI' },
+        { key: { ru: 'щ', en: 'o' }, shift: { ru: 'Щ', en: 'O' }, class: 'letter', code: 'KeyO' },
+        { key: { ru: 'з', en: 'p' }, shift: { ru: 'З', en: 'P' }, class: 'letter', code: 'KeyP' },
+        { key: { ru: 'х', en: '[' }, shift: { ru: 'Х', en: '{' }, class: 'letter', code: 'BracketLeft' },
+        { key: { ru: 'ъ', en: ']' }, shift: { ru: 'Ъ', en: '}' }, class: 'letter', code: 'BracketRight' },
         {key: { ru: '\\', en: '\\' }, shift: { ru: '|', en: '|' }, code: 'Backslash', class: 'key-backslash'}
     ],
 
     [
         { key: '<span class="caps_icon">•</span><div>Caps<br>lock</div>', code: 'CapsLock', class: 'key-capslock', noType: true },
-        { key: { ru: 'ф', en: 'a' }, shift: { ru: 'Ф', en: 'A' }, code: 'KeyA' },
-        { key: { ru: 'ы', en: 's' }, shift: { ru: 'Ы', en: 'S' }, code: 'KeyS' },
-        { key: { ru: 'в', en: 'd' }, shift: { ru: 'В', en: 'D' }, code: 'KeyD' },
-        { key: { ru: 'а', en: 'f' }, shift: { ru: 'А', en: 'F' }, code: 'KeyF' },
-        { key: { ru: 'п', en: 'g' }, shift: { ru: 'П', en: 'G' }, code: 'KeyG' },
-        { key: { ru: 'р', en: 'h' }, shift: { ru: 'Р', en: 'H' }, code: 'KeyH' },
-        { key: { ru: 'о', en: 'j' }, shift: { ru: 'О', en: 'J' }, code: 'KeyJ' },
-        { key: { ru: 'л', en: 'k' }, shift: { ru: 'Л', en: 'K' }, code: 'KeyK' },
-        { key: { ru: 'д', en: 'l' }, shift: { ru: 'Д', en: 'L' }, code: 'KeyL' },
-        { key: { ru: 'ж', en: ';' }, shift: { ru: 'Ж', en: ':' }, code: 'Semicolon' },
-        { key: { ru: 'э', en: '\'' }, shift: { ru: 'Э', en: '"' }, code: 'Quote' },
+        { key: { ru: 'ф', en: 'a' }, shift: { ru: 'Ф', en: 'A' }, class: 'letter', code: 'KeyA' },
+        { key: { ru: 'ы', en: 's' }, shift: { ru: 'Ы', en: 'S' }, class: 'letter', code: 'KeyS' },
+        { key: { ru: 'в', en: 'd' }, shift: { ru: 'В', en: 'D' }, class: 'letter', code: 'KeyD' },
+        { key: { ru: 'а', en: 'f' }, shift: { ru: 'А', en: 'F' }, class: 'letter', code: 'KeyF' },
+        { key: { ru: 'п', en: 'g' }, shift: { ru: 'П', en: 'G' }, class: 'letter', code: 'KeyG' },
+        { key: { ru: 'р', en: 'h' }, shift: { ru: 'Р', en: 'H' }, class: 'letter', code: 'KeyH' },
+        { key: { ru: 'о', en: 'j' }, shift: { ru: 'О', en: 'J' }, class: 'letter', code: 'KeyJ' },
+        { key: { ru: 'л', en: 'k' }, shift: { ru: 'Л', en: 'K' }, class: 'letter', code: 'KeyK' },
+        { key: { ru: 'д', en: 'l' }, shift: { ru: 'Д', en: 'L' }, class: 'letter', code: 'KeyL' },
+        { key: { ru: 'ж', en: ';' }, shift: { ru: 'Ж', en: ':' }, class: 'letter', code: 'Semicolon' },
+        { key: { ru: 'э', en: '\'' }, shift: { ru: 'Э', en: '"' }, class: 'letter', code: 'Quote' },
         {key: 'Enter', code: 'Enter', class: 'key-enter', noType: true }
     ],
 
     [
         { key: 'Shift', code: 'ShiftLeft', class: 'key-shift', noType: true },
-        { key: { ru: 'я', en: 'z' }, shift: { ru: 'Я', en: 'Z' }, code: 'KeyZ' },
-        { key: { ru: 'ч', en: 'x' }, shift: { ru: 'Ч', en: 'X' }, code: 'KeyX' },
-        { key: { ru: 'с', en: 'c' }, shift: { ru: 'С', en: 'C' }, code: 'KeyC' },
-        { key: { ru: 'м', en: 'v' }, shift: { ru: 'М', en: 'V' }, code: 'KeyV' },
-        { key: { ru: 'и', en: 'b' }, shift: { ru: 'И', en: 'B' }, code: 'KeyB' },
-        { key: { ru: 'т', en: 'n' }, shift: { ru: 'Т', en: 'N' }, code: 'KeyN' },
-        { key: { ru: 'ь', en: 'm' }, shift: { ru: 'Ь', en: 'M' }, code: 'KeyM' },
-        { key: { ru: 'б', en: ',' }, shift: { ru: 'Б', en: '<' }, code: 'Comma' },
-        { key: { ru: 'ю', en: '.' }, shift: { ru: 'Ю', en: '>' }, code: 'Period' },
+        { key: { ru: 'я', en: 'z' }, shift: { ru: 'Я', en: 'Z' }, class: 'letter', code: 'KeyZ' },
+        { key: { ru: 'ч', en: 'x' }, shift: { ru: 'Ч', en: 'X' }, class: 'letter', code: 'KeyX' },
+        { key: { ru: 'с', en: 'c' }, shift: { ru: 'С', en: 'C' }, class: 'letter', code: 'KeyC' },
+        { key: { ru: 'м', en: 'v' }, shift: { ru: 'М', en: 'V' }, class: 'letter', code: 'KeyV' },
+        { key: { ru: 'и', en: 'b' }, shift: { ru: 'И', en: 'B' }, class: 'letter', code: 'KeyB' },
+        { key: { ru: 'т', en: 'n' }, shift: { ru: 'Т', en: 'N' }, class: 'letter', code: 'KeyN' },
+        { key: { ru: 'ь', en: 'm' }, shift: { ru: 'Ь', en: 'M' }, class: 'letter', code: 'KeyM' },
+        { key: { ru: 'б', en: ',' }, shift: { ru: 'Б', en: '<' }, class: 'letter', code: 'Comma' },
+        { key: { ru: 'ю', en: '.' }, shift: { ru: 'Ю', en: '>' }, class: 'letter', code: 'Period' },
         { key: { ru: '.', en: '/' }, shift: { ru: ',', en: '?' }, code: 'Slash' },
         { key: '↑', code: 'ArrowUp', noType: true }, 
         { key: 'Shift', code: 'ShiftRight', class: 'key-shift', noType: true }
@@ -97,6 +97,7 @@ const keyboardContainer = createDomElement('div', '', 'keyboard-container');
 let cursor = textarea.selectionStart;
 let shift = false;
 let lang = 'en';
+
 
 
 body.append(textarea, keyboard);
@@ -144,12 +145,16 @@ function createKeyboard() {
     }
 }
 
+const capsIcon = document.querySelector('.caps_icon');
+textarea.focus()
+
 
 document.addEventListener('keydown', function(event) {
     textarea.focus();
     const elem = document.querySelector(`div[data-code=${event.code}]`);
 
     elem.classList.add('active');
+    
 
     if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
         keyboardContainer.innerHTML = '';
@@ -157,7 +162,18 @@ document.addEventListener('keydown', function(event) {
         createKeyboard()
     }
 
-    
+    if (event.code === 'CapsLock') {
+        capsIcon.classList.toggle('caps_on');
+        if (capsIcon.classList.contains('caps_on')) {
+            
+            
+            
+        }
+    }
+
+    if (event.code === 'Backspace') {
+        textarea.innerHTML = textarea.innerHTML.slice(0, -1);
+    }
 
 })
 
@@ -177,7 +193,25 @@ document.addEventListener('keyup', function(event) {
 
 
 keyboard.addEventListener('click', function(event) {
-    const elem = event.target.classList.contains('key');
-    
+    const isKey = event.target.classList.contains('key');
+    const isBackspace = event.target.classList.contains('key-backspace');
+
+    if (isBackspace) {
+
+        if (textarea.innerHTML === '') {
+            return;
+        }
+
+        textarea.innerHTML = textarea.innerHTML.slice(0, -1);    
+    }
+
+    if(isKey) {
+        
+        const isLetter = event.target.dataset.en;
+        if (isLetter) {
+
+            textarea.innerHTML += event.target.innerHTML;
+        }
+    }
     
 })
