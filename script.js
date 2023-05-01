@@ -52,7 +52,7 @@ const keyData = [
     ],
 
     [
-        { key: 'Shift', code: 'ShiftLeft', class: 'key-leftshift', noType: true },
+        { key: 'Shift', code: 'ShiftLeft', class: 'key-shift', noType: true },
         { key: { ru: 'я', en: 'z' }, shift: { ru: 'Я', en: 'Z' }, code: 'KeyZ' },
         { key: { ru: 'ч', en: 'x' }, shift: { ru: 'Ч', en: 'X' }, code: 'KeyX' },
         { key: { ru: 'с', en: 'c' }, shift: { ru: 'С', en: 'C' }, code: 'KeyC' },
@@ -64,7 +64,7 @@ const keyData = [
         { key: { ru: 'ю', en: '.' }, shift: { ru: 'Ю', en: '>' }, code: 'Period' },
         { key: { ru: '.', en: '/' }, shift: { ru: ',', en: '?' }, code: 'Slash' },
         { key: '↑', code: 'ArrowUp', noType: true }, 
-        { key: 'Shift', code: 'ShiftRight', class: 'key-rightshift', noType: true }
+        { key: 'Shift', code: 'ShiftRight', class: 'key-shift', noType: true }
     ],
 
 
@@ -112,5 +112,34 @@ function createKeyboard() {
 
         keyboardContainer.append(row);
 
+        keyData[i].forEach((e) => {
+
+            let keyLabel = shift && e.shift ? e.shift[lang] : e.key.ru && e.key.en ? e.key[lang] : e.key;
+
+            const key = createDomElement('div', keyLabel, 'key');
+
+            if (e.class) {
+                key.classList.add(e.class);
+            }
+
+            key.dataset.code = e.code;
+
+            if (e.key.ru && e.key.en) {
+                key.dataset.ru = e.key.ru;
+                key.dataset.en = e.key.en;
+            }
+
+            if (e.shift) {
+                key.dataset.ruShift = e.shift.ru;
+                key.dataset.enShift = e.shift.en;
+            }
+
+            if (e.noType) {
+                key.dataset.noType = true;
+            }
+
+
+            row.append(key);
+        })
     }
 }
